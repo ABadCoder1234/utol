@@ -51,6 +51,7 @@ mv utol/SIP utol/$input
 echo Saved file as $input
 S=1
 fi
+else
 if [ "$input" == "GDU" ]; then
 echo Opening kjklk-git v1.0
 cd
@@ -63,6 +64,7 @@ else
 git clone https://github.com/$input
 cd
 echo Saved repository
+S=1
 fi
 fi
 fi
