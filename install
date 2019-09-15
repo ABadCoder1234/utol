@@ -1,5 +1,7 @@
 #!/bin/bash
 sudo mv utol/UTOL /bin/UTOL
 sudo chmod +x /bin/UTOL
+sudo chmod +x /utol/install
+sudo chmod +x /utol/README.md
 rm utol/install
 rm utol/README.md
