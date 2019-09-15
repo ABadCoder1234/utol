@@ -13,6 +13,7 @@ sudo rm -rf utol
 git clone https://github.com/ABadCoder1234/utol
 sudo chmod +x ./utol/install 
 ./utol/install
+S=1
 else
 echo Cancelled update
 fi
