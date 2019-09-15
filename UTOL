@@ -30,6 +30,7 @@ else
 if [ "$input" == "--about" ]; then
 echo UTOL --Utility Tool On Linux-- V.0.3.1
 echo DU --Download Utility-- kjklk v.1.01
+echo GDU -- Git Download Utility-- kjklk-hit v1.0
 echo Run --help for commands
 S=1
 fi
@@ -49,6 +50,20 @@ read input
 mv utol/SIP utol/$input
 echo Saved file as $input
 S=1
+fi
+if [ "$input" == "GDU" ]; then
+echo Opening kjklk-git v1.0
+cd
+cd utol
+echo Repository URL --username/repo--
+read input
+if [ "$input" == "cancel" ]; then
+echo Cancelled
+else
+git clone https://github.com/$input
+cd
+echo Saved repository
+fi
 fi
 fi
 fi
