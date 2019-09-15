@@ -1,0 +1,59 @@
+#!/bin/bash
+echo Starting UTOL
+sleep 2.3
+echo Enter UTOL Command
+read input
+if [ "$input" == "--update" ]; then
+echo Update UTOL? [y,n]
+read input
+if [ "$input" == "y" ]; then
+cd
+sudo rm -rf utol
+git clone https://github.com/ABadCoder1234/utol
+sudo chmod +x ./utol/install 
+./utol/install
+else
+echo Cancelled update
+fi
+else
+if [ "$input" == "--help" ]; then
+echo Command list
+echo --about -Tells info about utol
+echo DU -Opens download utility
+echo ctrl+c to cancel utol at any time
+sleep 0.8
+utol
+S=1
+else
+if [ "$input" == "--about" ]; then
+echo UTOL --Utility Tool On Linux-- V.0.3.1
+echo DU --Download Utility-- kjklk v.1.01
+echo Run --help for commands
+S=1
+fi
+if [ "$input" == "DU" ]; then
+echo Starting kjklk v1.01
+sleep 3
+echo Enter URL
+read input
+if [ "$input" == "cancel" ]; then
+echo Cancelled
+else
+cd
+cd utol
+wget -O SIP $input
+echo Save as --No spaces--
+read input
+mv utol/SIP utol/$input
+echo Saved file as $input
+S=1
+fi
+fi
+fi
+fi
+fi
+if [ "$S" == "1" ]; then
+sleep 0.6
+else
+echo There was an error
+fi

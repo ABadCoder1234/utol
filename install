@@ -1,0 +1,5 @@
+#!/bin/bash
+cd utol
+sudo mv UTOL /bin/UTOL
+sudo chmod +x /bin/UTOL
+rm install 
