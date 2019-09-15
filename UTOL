@@ -51,7 +51,6 @@ fi
 fi
 fi
 fi
-fi
 if [ "$S" == "1" ]; then
 sleep 0.6
 else
