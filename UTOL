@@ -1,9 +1,12 @@
 #!/bin/bash
 cd
 echo Starting UTOL
-sleep 0.8
+sleep 0.67888021
 echo Enter UTOL Command
 read input
+if [ "$input" == "cmd" ] then
+$input
+else
 if [ "$input" == "--update" ]; then
 echo Update UTOL? All Files In util Folder Will Be Lost [y,n]
 read input
@@ -69,6 +72,7 @@ git clone https://github.com/$input
 cd
 echo Saved repository
 S=1
+fi
 fi
 fi
 fi
