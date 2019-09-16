@@ -1,4 +1,5 @@
 #!/bin/bash
+cd
 sudo mv utol/UTOL /bin/UTOL
 sudo chmod +x /bin/UTOL
 sudo chmod +x utol/install
