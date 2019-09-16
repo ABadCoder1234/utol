@@ -7,7 +7,9 @@ read input
 if [ "$input" == "cmd" ] then
 read input
 $input
+
 else
+
 if [ "$input" == "--update" ]; then
 echo Update UTOL? All Files In util Folder Will Be Lost [y,n]
 read input
