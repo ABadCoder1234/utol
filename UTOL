@@ -5,6 +5,7 @@ sleep 0.67888021
 echo Enter UTOL Command
 read input
 if [ "$input" == "cmd" ] then
+read input
 $input
 else
 if [ "$input" == "--update" ]; then
