@@ -25,12 +25,9 @@ if [ "$input" == "--help" ]; then
 echo Command list
 echo --about -Tells info about utol
 echo DU -Opens download utility
+echo GDU -Opens github download utility
 echo ctrl+c to cancel utol at any time
-echo 
-echo 
-echo 
-echo 
-sleep 0.8
+sleep 0.9
 UTOL
 S=1
 else
