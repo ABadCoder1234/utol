@@ -6,10 +6,11 @@ echo Enter UTOL Command
 read input
 if [ "$input" == "cmd" ] then
 read input
+echo Running Command
 $input
-
+echo Ran $input
+S=1
 else
-
 if [ "$input" == "--update" ]; then
 echo Update UTOL? All Files In util Folder Will Be Lost [y,n]
 read input
