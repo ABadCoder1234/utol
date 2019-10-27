@@ -76,8 +76,8 @@ if [ "$input" == "u" ]; then
 echo Downloading latest update
 git clone https://github.com/ABadCoder1234/utol
 cd
-sudo chmod +x utol/Install
-utol/Install
+sudo chmod +x utol/install
+utol/install
 echo Press any key to continue
 read -rsn1 input
 S=1
@@ -110,20 +110,7 @@ echo Setting turned off
 sleep 3
 S=1
 else
-if [ "$input" == "u" ]; then
-echo Update UTOL? All Files In util Folder Will Be Lost, and the new update may be fatal. [y,n]
-read input
-if [ "$input" == "y" ]; then
-cd
-sudo rm -rf utol
-git clone https://github.com/ABadCoder1234/utol
-sudo chmod +x ./utol/install 
-./utol/install
-S=1
-fi
-else
-echo Cancelled update
-else
+
 fi
 fi
 fi
