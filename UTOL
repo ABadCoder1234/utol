@@ -1,6 +1,6 @@
 #!/bin/bash
 cd
-echo Starting UTOL
+echo UTOL/
 read input
 if [ "$input" == "update" ]; then
 echo Update UTOL? All Files In util Folder Will Be Lost, and the new update may be fatal. [y,n]
