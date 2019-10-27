@@ -73,6 +73,7 @@ echo *c*hangelog
 echo *i*nverse colors
 read input
 if [ "$input" == "u" ]; then
+S=1
 echo All UTOL files will be lost and the latest exirimental update will be downloaded
 echo Continue? [y,n]
 read input
@@ -82,7 +83,6 @@ git clone https://github.com/ABadCoder1234/utol
 cd
 sudo chmod +x utol/install
 utol/install
-else
 fi
 echo Press any key to continue
 read -rsn1 input
@@ -115,7 +115,6 @@ setterm --inversescreen off
 echo Setting turned off
 sleep 3
 S=1
-else
 fi
 fi
 fi
