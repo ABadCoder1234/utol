@@ -1,5 +1,5 @@
 UTOL
-Uses: kjklk - kjklk git
+Uses: kjklk and kjklk git and other various linux commands
 Install Method 1.
 Copy/paste command
 sudo chmod +x utol/install && utol/install
