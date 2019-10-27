@@ -84,8 +84,9 @@ S=1
 else
 if [ "$input" == "c" ]; then
 clear
-echo Coming soon. Use old tool for now
-echo 
+echo Version pre-1.o changelog 
+echo Cleaned up commands a lot, use *help* to see new commands
+echo Added menu with changelog and inverse colors
 echo 
 echo
 echo
