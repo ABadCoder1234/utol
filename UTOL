@@ -65,13 +65,12 @@ git clone https://github.com/$input
 cd
 echo Saved repository
 S=1
+fi
 else
 if [ "$input" == "menu" ]; then
 echo *u*pdate 
 echo *c*hangelog
 echo *i*nverse colors
-echo *m*usic on
-echo *b*ackup
 read input
 if [ "$input" == "u" ]; then
 echo Downloading latest update
@@ -81,22 +80,11 @@ sudo chmod +x utol/Install
 utol/Install
 echo Press any key to continue
 read -rsn1 input
-else 
-fi
+S=1
 else
 if [ "$input" == "c" ]; then
 clear
-figlet Changelog
-echo v.0.0.400
-echo Added changelog
-echo When removing added option to remove figlet as well
-echo If figlet is not installed you can not launch permeo
-echo Clears error on launcher automatically if figlet is missing
-echo Added invert colors option
-echo Added EUpermeo, if you download a broken permeo version, using the command EUpermeo will update the game **Emergency Update Permeo**
-echo Added music option
-echo
-echo 
+echo Coming soon. Use old tool for now
 echo 
 echo 
 echo
@@ -104,11 +92,13 @@ echo
 echo
 echo Press any key to continue
 read -rsn1 input
+S=1
 else
 if [ "$input" == "i" ]; then
 echo 1. Turn it on
 echo 2. Turn it off
 read -rsn1 input
+S=1
 if [ "$input" == "1" ]; then
 setterm --inversescreen on
 echo Setting turned on
@@ -117,6 +107,11 @@ else
 setterm --inversescreen off
 echo Setting turned off
 sleep 3
+S=1
+fi
+fi
+fi
+fi
 fi
 fi
 fi
@@ -125,5 +120,5 @@ fi
 if [ "$S" == "1" ]; then
 sleep 0.6
 else
-echo There was a small error somewhere, try updating.
+echo Invalid/broken command or operator. If everything went fine ignore this message
 fi
