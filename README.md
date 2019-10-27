@@ -1,5 +1,5 @@
 UTOL
-Uses: kjklk and kjklk git and other various linux commands
+Uses: kjklk and kjklk git and other various linux commands that come with the terminal
 Install Method 1.
 Copy/paste command
 sudo chmod +x utol/install && utol/install
