@@ -15,7 +15,7 @@ S=1
 else
 echo Cancelled update
 fi
-else
+fi
 if [ "$input" == "help" ]; then
 echo Command list
 echo update -Updates utol
@@ -26,7 +26,7 @@ echo ctrl+c to cancel utol at any time
 sleep 0.9
 UTOL
 S=1
-else
+fi
 if [ "$input" == "about" ]; then
 echo UTOL --Utility Tool On Linux-- V.0.3.1
 echo DU --Download Utility-- kjklk v.1.01
@@ -51,7 +51,7 @@ mv utol/SIP utol/$input
 echo Saved file as $input
 S=1
 fi
-else
+fi
 if [ "$input" == "gdown" ]; then
 echo Opening kjklk-git v1.0
 cd
@@ -61,19 +61,18 @@ read input
 if [ "$input" == "cancel" ]; then
 echo Cancelled
 else
-git clone https://github.com/$input
 cd
+git clone https://github.com/$input
 echo Saved repository
 S=1
 fi
-else
+fi
 if [ "$input" == "menu" ]; then
 echo *u*pdate 
 echo *c*hangelog
 echo *i*nverse colors
 read input
 if [ "$input" == "u" ]; then
-S=1
 echo All UTOL files will be lost and the latest exirimental update will be downloaded
 echo Continue? [y,n]
 read input
@@ -87,7 +86,7 @@ fi
 echo Press any key to continue
 read -rsn1 input
 S=1
-else
+fi
 if [ "$input" == "c" ]; then
 clear
 echo Version pre-1.o changelog 
@@ -113,13 +112,7 @@ sleep 3
 else
 setterm --inversescreen off
 echo Setting turned off
-sleep 3
 S=1
-fi
-fi
-fi
-fi
-fi
 fi
 fi
 fi
