@@ -17,16 +17,29 @@ echo Cancelled update
 fi
 fi
 if [ "$input" == "help" ]; then
-echo Command list
-echo update -Updates utol
-echo about -Tells info about utol
+clear
+echo Using UTOL
+echo Upon typing $ UTOL into shell, you are greeted with UTOL/ this is where you type the command
+echo it is like UTOL/-----, when commands are listed it will say UTOL/[COMMAND].
+echo Only copy the part after UTOL/ for your command.
+echo
+echo
+echo Using Menu
+echo The menu is a nice way to see utol. To use the menu, use UTOL/menu.
+echo When you open the menu you see a bunch a commands, press the highlighted letter and enter
+echo For exaple, for help as you can see *h* is highlighted, like *h*elp
+echo
+echo
+echo Available commands
+echo UTOL/update -Updates utol
+echo UTOL/about -Tells info about utol
 echo down -Opens download utility
 echo gdown -Opens github download utility
 echo ctrl+c to cancel utol at any time
 sleep 0.9
+clear
 UTOL
-S=1
-fi
+S=1fi
 if [ "$input" == "about" ]; then
 echo UTOL --Utility Tool On Linux-- V.0.3.1
 echo DU --Download Utility-- kjklk v.1.01
@@ -68,10 +81,43 @@ S=1
 fi
 fi
 if [ "$input" == "menu" ]; then
-echo *u*pdate 
+echo *a*bout
 echo *c*hangelog
+eho *h*elp
 echo *i*nverse colors
+echo *u*pdate 
 read input
+if [ "$input" == "a" ]; then
+echo UTOL --Utility Tool On Linux-- V.0.3.1
+echo DU --Download Utility-- kjklk v.1.01
+echo GDU -- Git Download Utility-- kjklk-hit v1.0
+echo UTOL/help for command list
+S=1
+fi
+if [ "$input" == "h" ]; then
+clear
+echo Using UTOL
+echo Upon typing $ UTOL into shell, you are greeted with UTOL/ this is where you type the command
+echo it is like UTOL/-----, when commands are listed it will say UTOL/[COMMAND].
+echo Only copy the part after UTOL/ for your command.
+echo
+echo
+echo Using Menu
+echo The menu is a nice way to see utol. To use the menu, use UTOL/menu.
+echo When you open the menu you see a bunch a commands, press the highlighted letter and enter
+echo For exaple, for help as you can see *h* is highlighted, like *h*elp
+echo
+echo
+echo Available commands
+echo UTOL/update -Updates utol
+echo UTOL/about -Tells info about utol
+echo down -Opens download utility
+echo gdown -Opens github download utility
+echo ctrl+c to cancel utol at any time
+sleep 0.9
+clear
+UTOL
+S=1
 if [ "$input" == "u" ]; then
 echo All UTOL files will be lost and the latest exirimental update will be downloaded
 echo Continue? [y,n]
