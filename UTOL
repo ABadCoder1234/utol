@@ -118,6 +118,7 @@ sleep 0.9
 clear
 UTOL
 S=1
+fi
 if [ "$input" == "u" ]; then
 echo All UTOL files will be lost and the latest exirimental update will be downloaded
 echo Continue? [y,n]
