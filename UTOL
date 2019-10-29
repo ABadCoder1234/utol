@@ -80,10 +80,11 @@ echo Saved repository
 S=1
 fi
 fi
+fi
 if [ "$input" == "menu" ]; then
 echo *a*bout
 echo *c*hangelog
-eho *h*elp
+echo *h*elp
 echo *i*nverse colors
 echo *u*pdate 
 read input
