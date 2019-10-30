@@ -5,6 +5,7 @@ echo UTOL/
 read input
 if [ "$input" == "modbreak" ]; then
 sudo nano /bin/UTOL
+fi
 if [ "$input" == "update" ]; then
 echo Update UTOL? All Files In util Folder Will Be Lost, and the new update may be fatal. [y,n]
 read input
