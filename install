@@ -1,8 +1,16 @@
 #!/bin/bash
+clear
 cd
+sudo mv UTOL utol || clear
+echo mv utol/UTOL /bin/UTOL
 sudo mv utol/UTOL /bin/UTOL
+echo chmod +x /bin/UTOL
 sudo chmod +x /bin/UTOL
+echo chmod +x utol/install
 sudo chmod +x utol/install
+echo chmod +x utol/README.md
 sudo chmod +x utol/README.md
+echo rm utol/install
 rm utol/install
+echo rm utol/README.md
 rm utol/README.md
