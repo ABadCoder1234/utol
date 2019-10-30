@@ -7,14 +7,15 @@ if [ "$input" == "modbreak" ]; then
 sudo nano /bin/UTOL
 fi
 if [ "$input" == "update" ]; then
-echo Update UTOL? All Files In util Folder Will Be Lost, and the new update may be fatal. [y,n]
+echo Update?
 read input
 if [ "$input" == "y" ]; then
 cd
-sudo rm -rf utol
+mv utol UTOL
 git clone https://github.com/ABadCoder1234/utol
 sudo chmod +x ./utol/install 
 ./utol/install
+mv UTOL utol
 S=1
 else
 echo Cancelled update
