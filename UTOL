@@ -87,7 +87,7 @@ echo *c*hangelog
 echo *h*elp
 echo *i*nverse colors
 echo *u*pdate 
-read input
+read -rsn1 input
 if [ "$input" == "a" ]; then
 echo UTOL --Utility Tool On Linux-- V.0.3.1
 echo DU --Download Utility-- kjklk v.1.01
