@@ -137,6 +137,7 @@ sudo chmod +x ./utol/install
 mv UTOL utol
 S=1
 fi
+fi
 if [ "$input" == "c" ]; then
 clear
 echo Version pre-1.o changelog 
