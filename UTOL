@@ -7,7 +7,7 @@ if [ "$input" == "modbreak" ]; then
 sudo nano /bin/UTOL
 fi
 if [ "$input" == "update" ]; then
-echo Update?
+echo Update? [y,n]
 read input
 if [ "$input" == "y" ]; then
 cd
@@ -126,18 +126,15 @@ UTOL
 S=1
 fi
 if [ "$input" == "u" ]; then
-echo All UTOL files will be lost and the latest exirimental update will be downloaded
-echo Continue? [y,n]
+echo Update? [y,n]
 read input
 if [ "$input" == "y" ]; then
-echo Downloading latest update
-git clone https://github.com/ABadCoder1234/utol
 cd
-sudo chmod +x utol/install
-utol/install
-fi
-echo Press any key to continue
-read -rsn1 input
+mv utol UTOL
+git clone https://github.com/ABadCoder1234/utol
+sudo chmod +x ./utol/install 
+./utol/install
+mv UTOL utol
 S=1
 fi
 if [ "$input" == "c" ]; then
