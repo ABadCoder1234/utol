@@ -104,7 +104,7 @@ fi
 if [ "$input" == "d" ]; then
 echo Get what package?
 read input
-sudo apt-get -y $input
+sudo apt-get install -y $input
 fi
 if [ "$input" == "h" ]; then
 clear
