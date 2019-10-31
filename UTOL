@@ -105,11 +105,12 @@ S=1
 fi
 if [ "$input" == "d" ]; then
 echo Downloading Utility
-echo *d*ownload
+echo *l*ink download
 echo *g*it download
-echo Enter URL
 read -rsn1 input
-if [ "$input" == "d" ]; then
+if [ "$input" == "l" ]; then
+echo Enter URL
+read input
 cd
 cd utol
 wget -O SIP $input
@@ -128,6 +129,7 @@ cd
 git clone https://github.com/$input
 echo Saved repository
 S=1
+fi
 fi
 fi
 if [ "$input" == "g" ]; then
