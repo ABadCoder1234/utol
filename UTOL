@@ -47,9 +47,9 @@ clear
 UTOL
 S=1fi
 if [ "$input" == "about" ]; then
-echo UTOL --Utility Tool On Linux -- V.1.0 
-echo DU --Download Utility-- kjklk v.1.01
-echo GDU -- Git Download Utility-- kjklk-hit v1.0
+echo UTOL --Utility Tool On Linux -- V.1.0 alpha 1.2
+echo down --Download Utility-- kjklk v.1.01
+echo gdown -- Git Download Utility-- kjklk-hit v1.0
 echo Run help for commands
 S=1
 fi
