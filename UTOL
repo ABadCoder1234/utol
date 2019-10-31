@@ -90,7 +90,8 @@ fi
 if [ "$input" == "menu" ]; then
 echo *a*bout
 echo *c*hangelog
-echo *d*ownload package
+echo *d*ownload utility
+echo *g*et package
 echo *h*elp
 echo *i*nverse colors
 echo *u*pdate 
@@ -103,6 +104,33 @@ echo UTOL/help for command list
 S=1
 fi
 if [ "$input" == "d" ]; then
+echo Downloading Utility
+echo *d*ownload
+echo *g*it download
+echo Enter URL
+read -rsn1 input
+if [ "$input" == "d" ]; then
+cd
+cd utol
+wget -O SIP $input
+echo Save as --No spaces--
+read input
+mv utol/SIP utol/$input
+echo Saved file as $input
+S=1
+else
+if [ "$input" == "g" ]; then
+cd
+cd utol
+echo Repository URL --username/repo--
+read input
+cd
+git clone https://github.com/$input
+echo Saved repository
+S=1
+fi
+fi
+if [ "$input" == "g" ]; then
 echo Get what package?
 read input
 sudo apt-get install -y $input
