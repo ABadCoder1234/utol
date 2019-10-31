@@ -5,6 +5,7 @@ echo UTOL/
 read input
 if [ "$input" == "modbreak" ]; then
 sudo nano /bin/UTOL
+S=1
 fi
 if [ "$input" == "update" ]; then
 echo Update? [y,n]
@@ -141,6 +142,8 @@ git clone https://github.com/ABadCoder1234/utol
 sudo chmod +x ./utol/install 
 ./utol/install
 mv UTOL utol
+S=1
+else
 S=1
 fi
 fi
