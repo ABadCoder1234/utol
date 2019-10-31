@@ -89,6 +89,7 @@ fi
 if [ "$input" == "menu" ]; then
 echo *a*bout
 echo *c*hangelog
+echo *d*ownload package
 echo *h*elp
 echo *i*nverse colors
 echo *u*pdate 
@@ -99,6 +100,11 @@ echo DU --Download Utility-- kjklk v.1.01
 echo GDU -- Git Download Utility-- kjklk-hit v1.0
 echo UTOL/help for command list
 S=1
+fi
+if [ "$input" == "d" ]; then
+echo Get what package?
+read input
+sudo apt-get -y $input
 fi
 if [ "$input" == "h" ]; then
 clear
