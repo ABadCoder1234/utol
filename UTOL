@@ -89,11 +89,13 @@ fi
 fi
 if [ "$input" == "menu" ]; then
 echo *a*bout
+echo *b*ackup
 echo *c*hangelog
 echo *d*ownload utility
 echo *g*et package
 echo *h*elp
 echo *i*nverse colors
+echo *r*estore backup
 echo *u*pdate 
 read -rsn1 input
 if [ "$input" == "a" ]; then
@@ -101,6 +103,12 @@ echo UTOL --Utility Tool On Linux-- V.0.3.1
 echo DU --Download Utility-- kjklk v.1.01
 echo GDU -- Git Download Utility-- kjklk-hit v1.0
 echo UTOL/help for command list
+S=1
+fi
+if [ "$input" == "b" ]; then
+sudo cp /bin/UTOL /bin/utol && echo Saved to /bin/utol, run command utol *lowercase* to run backup
+sudo chmod +x /bin/utol
+echo Restore backup from command utol if you download a broken update
 S=1
 fi
 if [ "$input" == "d" ]; then
@@ -182,14 +190,22 @@ clear
 echo Version pre-1.o changelog 
 echo Cleaned up commands a lot, use *help* to see new commands
 echo Added menu with changelog and inverse colors
-echo 
-echo
-echo
+echo Added Backup create and restore feature 
+echo Added modbreak
+echo Please view full changelog on github release
 echo
 echo Press any key to continue
 read -rsn1 input
 S=1
 else
+if [ "$input" == "r" ]; then
+cp /bin/utol /bin/UTOL
+if [ "$?" == "1" ]; then
+echo Error, no backup made previously
+else
+echo Backed up successfully
+fi
+fi
 if [ "$input" == "i" ]; then
 echo 1. Turn it on
 echo 2. Turn it off
