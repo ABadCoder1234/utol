@@ -10,3 +10,8 @@ Double click install and click execute (not on all devices)
 ########################################
 Then type UTOL in terminal
 Then type --help for commands and help
+
+
+Q: Will I ever get rid of word commands entirely?
+
+A: Probably not, there has to be a way to troubleshoot, like using modbreak. I don't want it to be obviuos but I want it there
