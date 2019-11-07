@@ -45,7 +45,8 @@ echo ctrl+c to cancel utol at any time
 sleep 0.9
 clear
 UTOL
-S=1fi
+S=1
+fi
 if [ "$input" == "about" ]; then
 echo UTOL --Utility Tool On Linux -- V.1.0 alpha 1.2
 echo down --Download Utility-- kjklk v.1.01
@@ -84,7 +85,6 @@ cd
 git clone https://github.com/$input
 echo Saved repository
 S=1
-fi
 fi
 fi
 if [ "$input" == "menu" ]; then
