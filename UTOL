@@ -48,7 +48,7 @@ UTOL
 S=1
 fi
 if [ "$input" == "about" ]; then
-echo UTOL --Utility Tool On Linux -- V.1.0 alpha 1.2
+echo UTOL --Utility Tool On Linux -- V.1.0 alpha 2
 echo down --Download Utility-- kjklk v.1.01
 echo gdown -- Git Download Utility-- kjklk-hit v1.0
 echo Run help for commands
@@ -99,7 +99,7 @@ echo *r*estore backup
 echo *u*pdate 
 read -rsn1 input
 if [ "$input" == "a" ]; then
-echo UTOL --Utility Tool On Linux-- V.0.3.1
+echo UTOL --Utility Tool On Linux-- V.1.0 alpha 2
 echo DU --Download Utility-- kjklk v.1.01
 echo GDU -- Git Download Utility-- kjklk-hit v1.0
 echo UTOL/help for command list
