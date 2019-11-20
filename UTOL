@@ -1,7 +1,6 @@
 #!/bin/bash
 cd
-clear
-echo UTOL/
+echo /
 read input
 if [ "$input" == "modbreak" ]; then
 sudo nano /bin/UTOL
@@ -25,30 +24,29 @@ fi
 if [ "$input" == "help" ]; then
 clear
 echo Using UTOL
-echo Upon typing $ UTOL into shell, you are greeted with UTOL/ this is where you type the command
-echo it is like UTOL/-----, when commands are listed it will say UTOL/[COMMAND].
-echo Only copy the part after UTOL/ for your command.
+echo Upon typing $ UTOL into shell, you are greeted with / this is where you type the command
+echo it is like /-----, when commands are listed it will say /[COMMAND].
+echo Only copy the part after / for your command.
 echo
 echo
 echo Using Menu
-echo The menu is a nice way to see utol. To use the menu, use UTOL/menu.
+echo The menu is a nice way to see utol. To use the menu, use /menu.
 echo When you open the menu you see a bunch a commands, press the highlighted letter and enter
 echo For exaple, for help as you can see *h* is highlighted, like *h*elp
 echo
 echo
 echo Available commands
-echo UTOL/update -Updates utol
-echo UTOL/about -Tells info about utol
-echo down -Opens download utility
-echo gdown -Opens github download utility
+echo /update -Updates utol
+echo /about -Tells info about utol
+echo /down -Opens download utility
+echo /gdown -Opens github download utility
 echo ctrl+c to cancel utol at any time
 sleep 0.9
 clear
 UTOL
-S=1
-fi
+S=1fi
 if [ "$input" == "about" ]; then
-echo UTOL --Utility Tool On Linux -- V.1.0 alpha 2
+echo UTOL --Utility Tool On Linux -- V.1.0 alpha 1.2
 echo down --Download Utility-- kjklk v.1.01
 echo gdown -- Git Download Utility-- kjklk-hit v1.0
 echo Run help for commands
@@ -87,6 +85,7 @@ echo Saved repository
 S=1
 fi
 fi
+fi
 if [ "$input" == "menu" ]; then
 echo *a*bout
 echo *b*ackup
@@ -95,20 +94,18 @@ echo *d*ownload utility
 echo *g*et package
 echo *h*elp
 echo *i*nverse colors
-echo *r*estore backup
 echo *u*pdate 
 read -rsn1 input
 if [ "$input" == "a" ]; then
-echo UTOL --Utility Tool On Linux-- V.1.0 alpha 2
+echo UTOL --Utility Tool On Linux-- V.0.4
 echo DU --Download Utility-- kjklk v.1.01
 echo GDU -- Git Download Utility-- kjklk-hit v1.0
-echo UTOL/help for command list
+echo /help for command list
 S=1
 fi
 if [ "$input" == "b" ]; then
 sudo cp /bin/UTOL /bin/utol && echo Saved to /bin/utol, run command utol *lowercase* to run backup
 sudo chmod +x /bin/utol
-echo Restore backup from command utol if you download a broken update
 S=1
 fi
 if [ "$input" == "d" ]; then
@@ -148,9 +145,9 @@ fi
 if [ "$input" == "h" ]; then
 clear
 echo Using UTOL
-echo Upon typing $ UTOL into shell, you are greeted with UTOL/ this is where you type the command
-echo it is like UTOL/-----, when commands are listed it will say UTOL/[COMMAND].
-echo Only copy the part after UTOL/ for your command.
+echo Upon typing $ UTOL into shell, you are greeted with / this is where you type the command
+echo it is like /-----, when commands are listed it will say /[COMMAND].
+echo Only copy the part after / for your command.
 echo
 echo
 echo Using Menu
@@ -160,10 +157,10 @@ echo For exaple, for help as you can see *h* is highlighted, like *h*elp
 echo
 echo
 echo Available commands
-echo UTOL/update -Updates utol
-echo UTOL/about -Tells info about utol
-echo down -Opens download utility
-echo gdown -Opens github download utility
+echo /update -Updates utol
+echo /about -Tells info about utol
+echo /down -Opens download utility
+echo /gdown -Opens github download utility
 echo ctrl+c to cancel utol at any time
 sleep 0.9
 clear
@@ -190,22 +187,14 @@ clear
 echo Version pre-1.o changelog 
 echo Cleaned up commands a lot, use *help* to see new commands
 echo Added menu with changelog and inverse colors
-echo Added Backup create and restore feature 
-echo Added modbreak
-echo Please view full changelog on github release
+echo 
+echo
+echo
 echo
 echo Press any key to continue
 read -rsn1 input
 S=1
 else
-if [ "$input" == "r" ]; then
-cp /bin/utol /bin/UTOL
-if [ "$?" == "1" ]; then
-echo Error, no backup made previously
-else
-echo Backed up successfully
-fi
-fi
 if [ "$input" == "i" ]; then
 echo 1. Turn it on
 echo 2. Turn it off
