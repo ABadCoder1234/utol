@@ -4,7 +4,7 @@ cd
 sudo mv UTOL utol || clear
 
 sudo mv utol/UTOL /bin/UTOL
-sudo mv utol/uchang /bin/uchange
+sudo mv utol/UUUTTTOOO3 /bin/uchange
 sudo chmod +x /bin/UTOL
 sudo chmod +x /bin/uchange
 sudo chmod +x utol/install
