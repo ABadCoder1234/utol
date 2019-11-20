@@ -1,5 +1,5 @@
 #!/bin/bash
-echo Welcome to uchange. The mod for utol.
+echo Welcome to uchange
 echo Advanced backup allows you to backup a version of utol to whatever command you want
 echo
 echo Disclaimer: This only works if you have not changed the directory of UTOL
