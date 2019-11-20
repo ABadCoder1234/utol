@@ -1,0 +1,12 @@
+#!/bin/bash
+echo Welcome to uchange. The mod for utol.
+echo Advanced backup allows you to backup a version of utol to whatever command you want
+echo
+echo Disclaimer: This only works if you have not changed the directory of UTOL
+echo This will break modbreak. Also update will not update the modded version
+echo Enter advanced backup name
+read input
+cd /bin
+sudo cp UTOL $input
+sudo chmod +x $input
+echo Done
